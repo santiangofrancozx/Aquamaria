@@ -27,8 +27,6 @@ body {
     width: 100%;
     height: 100%;
     padding: 1rem;
-
-    /* Imagen de fondo predeterminada para dispositivos más pequeños (vertical) */
     background-image: url('img/wall-big-blk-vertical.png');
 }
 
@@ -39,6 +37,32 @@ header .profile {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+}
+
+header .profile .aquamarialogo {
+    max-width: 150px;
+    width: 25vw;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+
+.social-icons a {
+    font-size: 30px; /* Tamaño del ícono */
+    text-decoration: none; /* Sin subrayado */
+    margin: 0 10px; /* Espaciado entre íconos */
+    transition: color 0.3s;
+    color: #fff;
+}
+
+.icon:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
+    color: #A7A8AA; /* Color más claro en hover */
+}
+
+.icon{
+    color: #344F47; /* Color de Instagram */
 }
 
 header .profile .aquamarialogo {
@@ -64,7 +88,7 @@ section.links {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem; /* Espaciado uniforme entre enlaces */
+    gap: 1rem;
     width: 100%;
     max-width: 800px;
     margin: 1.5rem auto;
